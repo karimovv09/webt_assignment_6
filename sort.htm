@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Landmarks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="landmarks.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.htm">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.htm">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="todo.htm">To-Do List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sort.htm">Landmarks List</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1 class="text-center">Landmarks</h1>
+
+        <div class="row mb-3">
+            <div class="col-lg-12 text-center">
+                <button class="btn btn-primary" onclick="sortLandmarks('asc')">Sort by Ascending (Year)</button>
+                <button class="btn btn-secondary" onclick="sortLandmarks('desc')">Sort by Descending (Year)</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <ul class="list-group" id="landmarksList">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Eiffel Tower, Paris, France
+                    <span class="badge bg-primary rounded-pill">1889</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Great Wall of China, China
+                    <span class="badge bg-primary rounded-pill">700 BC</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Taj Mahal, Agra, India
+                    <span class="badge bg-primary rounded-pill">1648</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Colosseum, Rome, Italy
+                    <span class="badge bg-primary rounded-pill">80 AD</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Sagrada Familia, Barcelona, Spain
+                    <span class="badge bg-primary rounded-pill">1882</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Stonehenge, England
+                    <span class="badge bg-primary rounded-pill">2500 BC</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Statue of Liberty, New York, USA
+                    <span class="badge bg-primary rounded-pill">1886</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center mt-4 p-3">
+        <p>Created by Assanali Karimov</p>
+    </footer>
+</body>
+</html>
